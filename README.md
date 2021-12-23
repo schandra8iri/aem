@@ -26,3 +26,29 @@ Chapters
 12. Maintainance
 13. Logs
 14. 
+
+
+
+Chapter 2 - Installation and setup
+
+Installation
+
+
+Developer setup
+
+
+- Install AEM plugin in eclipse 
+- Create AEM multmodule project 
+
+```sh
+mvn -B archetype:generate \
+ -D archetypeGroupId=com.adobe.aem \
+ -D archetypeArtifactId=aem-project-archetype \
+ -D archetypeVersion=XX \
+ -D aemVersion=cloud \
+ -D appTitle="My Site" \
+ -D appId="mysite" \
+ -D groupId="com.mysite" \
+ -D frontendModule=general \
+ -D includeExamples=n
+ ```
